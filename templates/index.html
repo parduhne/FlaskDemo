@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+<nav>
+  <h1>Multiply App</h1>
+</nav>
+
+
+{% block content %}
+  <form method="post">
+    <label for="a">A:</label>
+    <input name="a" id="a" value="{{ t['a'] }}" required><br>
+    <label for="b">B:</label>
+    <input name="b" id="b" value="{{ t['b'] }}" required> <br>
+    <label for="b">A*B=</label>
+    <input name="c" id="c" value="{{ t['c'] }}"> <br>
+    <input type="submit" value="Multiply!">
+  </form>
+{% endblock %}
+
+<p>You have used this page {{ times }} times</p>
+
+<a href="{{ url_for('logout') }}">Reset Session</a>
+
+</body>
