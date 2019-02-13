@@ -1,6 +1,8 @@
 import os
 
-
+import string
+import nltk.corpus
+import cmudict
 from flask import Flask, request, redirect, render_template, session, url_for, g
 
 app = Flask(__name__)
@@ -16,7 +18,7 @@ def calculate():
     t['b'] = request.form['b']
   elif 'a' in request.args:
     t['a'] = request.args.get('a')
-    t['b'] = request.args.get('b') 
+    t['b'] = request.args.get('b')
   t['c'] = int(t['a']) * int(t['b'])
 
   # Update the number of visits
