@@ -4,6 +4,8 @@ We are using docker to standardize the python and flask versions.  No files are 
 
 When in this folder with the Dockerfile, do:
 
+docker build -t flaskrunner:latest .
+
 to create an image.  This has python and flask.
 
 When ready to start the server, do

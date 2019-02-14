@@ -20,7 +20,6 @@ def calculate():
     t['a'] = request.args.get('a')
     t['b'] = request.args.get('b')
   t['c'] = int(t['a']) * int(t['b'])
-
   # Update the number of visits
   # session is a dict which persists.  Stored in client cookie (no local storage)
   if 'times' not in session:

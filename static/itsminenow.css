@@ -1,0 +1,242 @@
+/*
+Theme Name: Green Laser
+Version: 1
+Author: Paul Talaga
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style-image: url("/images/pixelarrow_b.png");
+	padding: 0px 1px 0px 15px;
+}
+li {
+    margin:6px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end css reset */
+
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+p {
+    margin: 5px;
+    line-height: 1.4;
+    margin: 10px 8px 10px 0px;
+}
+
+.tight {
+    margin: 5px;
+    line-height: 1.1;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+	border-bottom:1px solid #2a2a2a;
+}
+
+/*img {
+    border-style: none;
+    display:block;
+  padding: 5px;
+} */
+
+a:hover{
+   text-decoration: none;
+    color: #fff;
+    border-bottom:1px solid #aaa;
+    /*background-color: #006600;*/
+}
+
+/*   new   */
+body {
+    background-color: #333333;
+    color: #fff;
+    padding:25px;
+    background-image: url(/images/bg.png);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.menu {
+    float: left;
+    width:110px;
+    padding: 5px;
+
+}
+
+.body {
+    float: left;
+    width: 75%;
+    padding: 5px;
+}
+
+.clear {
+    clear:both;
+}
+
+hr {
+    width: 100%;
+    color: #00ff00;
+    background-color: #00cc44;
+    height: 1px;
+    border: none;
+}
+
+.flaare {
+    background-image: url(images/green_line.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.centerblock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family:  arial;
+    margin:0px 5px 15px 0px;
+    padding: 3px 0px 3px 3px;
+    width: 200px;
+    border-bottom-style: solid;
+    border-bottom-color: #007700;
+    border-bottom-width: 1px;
+}
+
+h3 {
+    margin:15px 5px 10px 0px;
+    padding: 3px 0px 3px 3px;
+    width: 200px;
+    border-bottom-style: solid;
+    border-bottom-color: #007700;
+    border-bottom-width: 1px;
+}
+
+h2 {
+    font-size: 14pt;
+    font-family: serif;
+    padding: 3px 0px 3px 0px;
+    color: #fff;
+}
+
+h4 {
+     padding: 5px 0px 3px 0px;
+}
+
+.block {
+    background-color: #222222;
+    border: 1px #007700 solid;
+    padding: 7px 2px 7px 2px;
+    margin: 4px;
+}
+
+.w2 {
+    float: left;
+    width: 46%;
+    min-width: 205px;
+}
+
+.w3 {
+    float: left;
+    width: 220px;
+}
+
+
+
+.b {
+    font-weight:bold;
+}
+
+.i {
+    font-style: italic;
+}
+
+.footer {
+    color: #999999;
+}
+
+pre {
+    padding:5px;
+    font-size: 8pt;
+    line-height: 1.1;
+}
+
+strong {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+dt {
+    font-weight:bold;
+        margin: 2px;
+        font-size: 1.1em;
+}
+
+dd {
+	padding: 0px 0px 3px 15px;
+
+}
+input[type=text] {
+  background-color: #8B008B;
+  color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
