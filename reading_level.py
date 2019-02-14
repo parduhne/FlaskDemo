@@ -23,7 +23,9 @@ def words_per_sentence(text):
         if (len(x) > 0):
             sum += len(x)
             count += 1
-    return sum/count
+    if(count != 0):
+        return sum/count
+    return 0
 
 def avg_syllable_per_word(text):
     text = text.split()
@@ -52,13 +54,12 @@ def calculateAge():
         wpers = words_per_sentence(fileArr)
         sperw = avg_syllable_per_word(fileArr)
         FKRA = (0.39 * wpers) + (11.8 * sperw) - 15.59
-        t['age'] = FKRA
+        t['age'] = round(FKRA, 2)
     if 'json' in request.args:
         return jsonify(t['age'])
     if 'times' not in session:
       session['times'] = 0
     session['times'] += 1
-
     return render_template('index.html', t = t, times = session['times'])
 
 @app.route('/logout')

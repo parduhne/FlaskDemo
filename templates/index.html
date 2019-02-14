@@ -13,9 +13,9 @@
 
 {% block content %}
   <form method="get">
-    <label for="text">Enter text:</label>
+    <label for="text">Enter text:</label><br>
     <input name="text" id="text" type=text value="{{ t['text'] }}" required><br>
-    <label for="age">The recommended reading age is:</label>
+    <label for="age">The recommended reading age is:</label><br>
     <input name="age" id="age" type=text value="{{ t['age']}}"><br>
     <input type="submit" value="Go">
     <p>If you want to use json put something like '/?json=1&text=something' in the URL after the 5000</p>

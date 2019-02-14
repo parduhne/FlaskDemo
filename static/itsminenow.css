@@ -232,11 +232,17 @@ dd {
 	padding: 0px 0px 3px 15px;
 
 }
-input[type=text] {
-  background-color: #8B008B;
+input {
   color: white;
-  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
+}
+input[type=text] {
+  background-color: #8B008B;
+  width: 50%;
+}
+
+input[type=submit] {
+  background-color: #800000;
+  width: 10%;
 }

@@ -15,20 +15,24 @@ def client():
 def test_title(client):
     """Verify the title"""
     rv = client.get('/')
-    assert b'Multiply App' in rv.data
+    assert b'Reading Level Calculator' in rv.data
 
-def test_multiplication_POST(client):
-    """Verify multiplication works"""
-    rv = client.post('/', data={'a':5, 'b':6}) # sends a and b as post values
-    assert b'30' in rv.data
+def test_text_GET(client):
+    """Verify text works"""
+    rv = client.get('/?text=hello') # sends a and b as post values
+    print(rv.data)
+    assert b'8.4' in rv.data
 
-    rv = client.post('/', data={'a':-5, 'b':2})
-    assert b'-10' in rv.data
+    rv = client.get('/?text=+')
+    print(rv.data)
+    assert b'-15.59' in rv.data
 
-def test_multiplication_GET(client):
-    """Verify multiplication works"""
-    rv = client.get('/?a=5&b=10') # sends a and b as post values
-    assert b'50' in rv.data
+def test_json_GET(client):
+    """Verify json works"""
+    rv = client.get('/?json=1&text=hello') # sends a and b as post values
+    print(rv.data)
+    assert b'8.4' in rv.data
 
-    rv = client.get('/?a=9&b=9')
-    assert b'81' in rv.data
+    rv = client.get('/?json=1&text=+')
+    print(rv.data)
+    assert b'-15.59' in rv.data
