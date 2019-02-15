@@ -3,7 +3,7 @@
 import os
 import pytest
 
-from app import *
+from reading_level import *
 
 # This will get called before every test and can be used to set up a testing DB
 @pytest.fixture
